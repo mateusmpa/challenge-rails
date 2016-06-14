@@ -23,6 +23,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
   gem 'faker', '~> 1.6', '>= 1.6.3'
   gem 'factory_girl_rails', '~> 4.7'
+  gem 'simplecov', '~> 0.11.2'
   gem 'rubocop', '~> 0.40.0', require: false
 end
 
