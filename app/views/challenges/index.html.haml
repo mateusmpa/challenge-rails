@@ -1,1 +1,5 @@
-h1= Welcome
+%h1 Welcome
+- @challenges.each do |challenge|
+  %dl
+    %dt= challenge.title
+    %dd= challenge.description
