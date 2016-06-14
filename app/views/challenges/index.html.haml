@@ -1,5 +1,6 @@
 %h1 Welcome
 - @challenges.each do |challenge|
-  %dl
-    %dt= challenge.title
-    %dd= challenge.description
+  .panel.panel-default
+    .panel-body
+      = challenge.title
+      = link_to 'Start', challenge, class: 'btn btn-principal'
