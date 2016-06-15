@@ -3,4 +3,4 @@
   .panel.panel-default
     .panel-body
       = challenge.title
-      = link_to 'Start', challenge, class: 'btn btn-principal'
+      = link_to 'Start', start_challenge_path(challenge), class: 'btn btn-principal', method: :post

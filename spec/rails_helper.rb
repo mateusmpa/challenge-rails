@@ -59,4 +59,10 @@ RSpec.configure do |config|
 
   # Required to FactoryGirl
   config.include FactoryGirl::Syntax::Methods
+
+  # Required to Devise
+  config.include Warden::Test::Helpers
+  config.before :suite do
+    Warden.test_mode!
+  end
 end

@@ -1,1 +1,1 @@
-rvm 2.2.4@challenge-rails --create
+rvm 2.3.0@challenge-rails --create

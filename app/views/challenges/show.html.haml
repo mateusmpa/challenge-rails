@@ -1,4 +1,7 @@
 %h1= @challenge.title
 .panel.panel-default
+  .panel-heading
+    - if user_signed_in? && @challenge.started_by?(current_user)
+      %h3 Started
   .panel-body
     = @challenge.description
